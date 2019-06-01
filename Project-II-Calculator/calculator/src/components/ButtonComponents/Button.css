@@ -1,0 +1,56 @@
+.numberbutton {
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+.numberbutton2 {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 400px;
+}
+
+.clearbutton {
+    background: white;
+    flex-grow: 3;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button {
+    background: white;
+    flex-grow: 0.9;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button2 {
+    background: #a0051e;
+    flex-grow: 1;
+    color: white;
+    font-size: 20px;
+}
+
+.zerobutton {
+    background: white;
+    flex-grow: 3.3;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    background: black;
+    color: white;
+    font-size: 70px;
+    flex-grow: 1;
+}
+
+.display {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100px;
+    width: 400px;
+}
