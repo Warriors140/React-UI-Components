@@ -1,23 +1,46 @@
 import React from 'react';
 import './App.css';
+import NumberButton from './components/ButtonComponents/NumberButton';
+import ActionButton from './components/ButtonComponents/ActionButton';
+import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay';
 
 const App = () => {
   return (
-    <div>
-      <h3>Welcome to React Calculator</h3>
-      <p>
-        We have given you a starter project. You'll want to build out your
-        components in their respective files, remove this code and replace it
-        with the proper components.
-      </p>
-      <p>
-        <strong>
-          Don't forget to `default export` your components and import them here
-          inside of this file in order to make them work.
-        </strong>
-      </p>
+    <div className= 'wholecalculator'>
+    <div className= 'display'>
+      <CalculatorDisplay text= '0'  />
+    </div>  
+    <div className= 'topbutton numberbutton2'>
+      <ActionButton text= 'clear' actionStyle= 'clearbutton' />
+      <ActionButton text= '&divide;' actionStyle= 'button2' />
+    </div>  
+    <div className= 'middlebutton1 numberbutton2'>
+      <NumberButton text= '7' buttonStyle= 'button' />
+      <NumberButton text= '8' buttonStyle= 'button' />
+      <NumberButton text= '9' buttonStyle= 'button' />
+      <ActionButton text= '&times;' actionStyle= 'button2' />
+    </div>  
+    <div className= 'middlebutton2 numberbutton2'>
+      <NumberButton text= '4' buttonStyle= 'button' />
+      <NumberButton text= '5' buttonStyle= 'button' />
+      <NumberButton text= '6' buttonStyle= 'button' />
+      <ActionButton text= '&minus;' actionStyle= 'button2' />
     </div>
-  );
-};
+    <div className= 'middlebutton3 numberbutton2'>  
+      <NumberButton text= '1' buttonStyle= 'button' />
+      <NumberButton text= '2' buttonStyle= 'button' />
+      <NumberButton text= '3' buttonStyle= 'button' />
+      <ActionButton text= '+' actionStyle= 'button2' />
+    </div>
+    <div className= 'bottombutton numberbutton2'>  
+      <NumberButton text= '0' buttonStyle= 'zerobutton' />
+      <ActionButton text= '=' actionStyle= 'button2' />
+    </div>  
+    </div>
+    
+    
+ 
+  )
+ }   
 
 export default App;
